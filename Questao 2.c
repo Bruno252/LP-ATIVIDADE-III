@@ -12,7 +12,7 @@ float somaNota=0;
 float media[5];
 char resultado[5][250];
 
-    for(i=0;i<3;i++){
+    for(i=0;i<5;i++){
         fflush(stdin);
         printf("%d Nome:",i+1);
         fgets(aluno[i],250,stdin);
@@ -20,18 +20,18 @@ char resultado[5][250];
         printf("Idade:");
         scanf("%d",&idade[i]);
 
-        for(j=0;j<2;j++){
+        for(j=0;j<3;j++){
             printf("%d Nota:",j+1);
             scanf("%f",&nota[i][j]);
             somaNota+=nota[i][j];
         }
 
         media[i]=somaNota/j;
-        
+
         if(media[i]>=7){
             strcpy(resultado[i],"Aluno Aprovado\n");
 
-        }else if(media[i]<7 && media[i]==5){
+        }else if(media[i]<7 && media[i]>=5){
             strcpy(resultado[i],"Aluno em Recuperacao\n");
 
         }else{
@@ -46,14 +46,15 @@ char resultado[5][250];
 
     }   
 
+system("cls || clear");
 printf("\n");
 
-    for(i=0;i<3;i++){
+    for(i=0;i<5;i++){
         printf("______________________________\n");
         printf("%d Aluno:%s\n",i+1,aluno[i]);
         printf("Idade:%d\n",idade[i]);
 
-        for(j=0;j<2;j++){
+        for(j=0;j<3;j++){
             printf("%d Nota:%.2f\n",j+1,nota[i][j]);
 
         }
