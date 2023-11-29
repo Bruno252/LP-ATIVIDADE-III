@@ -11,7 +11,7 @@ int main()
 
     do {
         fflush(stdin);
-        //setbuf(stdin,NULL);
+        setbuf(stdin,NULL);
         printf("Digite:\n");
         printf("1 | para adicionar produto\n");
         printf("2 | para encerrar e mostrar os produtos adicionados\n");
@@ -21,7 +21,7 @@ int main()
 
         case 1:
             fflush(stdin);
-            //setbuf(stdin,NULL);
+            setbuf(stdin,NULL);
             printf("\n");
             printf("Nome do Produto:");
             fgets(nomeProduto[i],250,stdin);
@@ -37,9 +37,9 @@ int main()
             i++;
             system("cls || clear");
             break;
-            
-        case 2:
 
+        case 2:
+            system("cls || clear");
             for(j=0; j<i; j++) {
                 printf("___________________________________\n");
                 printf("Nome Do Produto:%s",nomeProduto[j]);
@@ -53,7 +53,7 @@ int main()
         }
 
     } while (escolha != 2);
-    
+
     printf("\nValor Total:R$%.2f",valorTotal);
 
     return 0;
