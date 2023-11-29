@@ -17,7 +17,7 @@ int main()
     printf("2 | para encerrar e mostrar a agenda\n");
     scanf("%d",&escolha);
     fflush(stdin);
-    setbuf(stdin,NULL);
+    //setbuf(stdin,NULL);
     
         switch (escolha)
         {
