@@ -17,7 +17,8 @@ int main()
     printf("2 | para encerrar e mostrar a agenda\n");
     scanf("%d",&escolha);
     fflush(stdin);
-
+    setbuf(stdin,NULL);
+    
         switch (escolha)
         {
 
@@ -34,11 +35,11 @@ int main()
 
         case 2: 
             system("cls || clear");
-
+            printf("Contatos:\n\n");
             for(j=0;j<i;j++){
 
                 printf("Nome:%s",nome[j]);
-                printf("Numero:%d",numero[j]);
+                printf("Numero:%d\n",numero[j]);
                 printf("\n");
 
             }
