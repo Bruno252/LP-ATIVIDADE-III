@@ -22,7 +22,7 @@ menorAltura=100;
         printf("%d Nome:", i + 1);
         fgets(nome[i],250,stdin);
 
-    
+
         printf("Idade:");
         scanf("%d", &idade[i]);
 
@@ -33,7 +33,7 @@ menorAltura=100;
         scanf("%f",&peso[i]);
         maiorPeso= peso[i] > maiorPeso ? peso[i] : maiorPeso;
         menorPeso= peso[i] < menorPeso ? peso[i] : menorPeso;
-        
+
         printf("Altura:");
         scanf("%f",&altura[i]);
 
@@ -43,7 +43,7 @@ menorAltura=100;
 
 
         fflush(stdin);
-        //setbuf(stdin,NULL);
+        setbuf(stdin,NULL);
         printf("\n");
     }
 
@@ -54,8 +54,8 @@ system("cls || clear");
         printf("______________________________\n");
         printf("Nome:%s\n",nome[i]);
         printf("Idade:%d\n",idade[i]);
-        printf("Peso:%.2f\n",peso[i]);
-        printf("Altura:%.2f\n",altura[i]);
+        printf("Peso:%.2fKg\n",peso[i]);
+        printf("Altura:%.2fm\n",altura[i]);
 
         printf("\n");
     }
@@ -64,13 +64,13 @@ system("cls || clear");
     printf("Maior Idade:%d\n",maiorIdade);
     printf("Menor Idade:%d\n",menorIdade);
     printf("______________________________\n");
-    printf("Maior Peso:%.2f\n",maiorPeso);
-    printf("Menor Peso:%.2f\n",menorPeso);
+    printf("Maior Peso:%.2fKg\n",maiorPeso);
+    printf("Menor Peso:%.2fKg\n",menorPeso);
     printf("______________________________\n");  
-    printf("Maior Altura:%.2f\n",maiorAltura);
-    printf("Menor Altura:%.2f\n",menorAltura);
+    printf("Maior Altura:%.2fm\n",maiorAltura);
+    printf("Menor Altura:%.2fm\n",menorAltura);
     printf("______________________________\n");
-   
+
 
     return 0;
 }
