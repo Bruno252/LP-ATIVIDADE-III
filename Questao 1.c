@@ -43,7 +43,7 @@ menorAltura=100;
 
 
         fflush(stdin);
-        setbuf(stdin,NULL);
+        //setbuf(stdin,NULL);
         printf("\n");
     }
 
