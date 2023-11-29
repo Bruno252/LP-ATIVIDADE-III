@@ -42,7 +42,7 @@ char resultado[5][250];
         somaNota=0;
         fflush(stdin);
         printf("\n");
-        //setbuf(stdin,NULL);
+        setbuf(stdin,NULL);
 
     }   
 
