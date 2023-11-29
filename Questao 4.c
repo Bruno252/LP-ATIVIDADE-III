@@ -9,11 +9,11 @@ int main(){
     int qntPar=0,qntImpar=0;
     int somaPar=0,somaImpar=0;
     int qntNegativo=0;
-    int maiorNumero=INT_MIN,menorNumero=INT_MAX;
+    int maiorNumero=-1,menorNumero=999;
     float media,mediaPar;
 
 
-    for(i=0;i<3;i++){
+    for(i=0;i<5;i++){
 
         printf("Numero:");
         scanf("%d",&numero[i]);
