@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
@@ -8,7 +9,8 @@ int main()
     char nome[50][250];
     int numero[250];
     int escolha;
-
+    int tempo=2;
+    
 
     do{
 
@@ -18,19 +20,18 @@ int main()
     scanf("%d",&escolha);
     fflush(stdin);
     //setbuf(stdin,NULL);
-    
+
         switch (escolha)
         {
 
         case 1:
-            printf("\n");
             printf("Nome:");
             fgets(nome[i], 250, stdin);
             printf("Numero:");
             scanf("%d",&numero[i]);
             printf("\n");
             i++;
-
+system("cls || clear");
             break;
 
         case 2: 
@@ -45,7 +46,16 @@ int main()
             }
 
             break;
-
+            
+            default:
+            
+            system("cls || clear");
+            printf("O Numero que voce digitou e invalido\n",(int)time(NULL));
+            sleep(tempo);
+            system("cls || clear");
+            
+            break;
+            
         }
 
     } while (escolha != 2);
